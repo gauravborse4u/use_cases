@@ -15,7 +15,7 @@ public class SchoolEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	/* private String Stud; */
+	private String Stud_name;
 	private String School_name;
 
 	public String getSchool_name() {
@@ -26,16 +26,14 @@ public class SchoolEntity {
 		this.School_name = school_name;
 	}
 
-	/*
-	 * public Integer getId() { return id; }
-	 * 
-	 * public void setId(Integer id) { this.id = id; }
-	 */
+	public String getStud_name() {
+		return Stud_name;
+	}
 
-	/*
-	 * public String getStud() { return Stud; }
-	 * 
-	 * public void setStud(String stud) { this.Stud = stud; }
-	 */
+	public void setStud_name(String stud_name) {
+		this.Stud_name = stud_name;
+	}
+
+	
 
 }
