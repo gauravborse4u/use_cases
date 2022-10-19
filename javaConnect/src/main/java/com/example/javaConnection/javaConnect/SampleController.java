@@ -12,7 +12,7 @@ public class SampleController {
 	@Autowired
 	private EmployeeRepo er;// up to date
 
-	@GetMapping("/sample")
+	@GetMapping("/join")
 	public List<EmployeeEntity> getSample() {
 		ArrayList<EmployeeEntity> transformedvalues = new ArrayList<EmployeeEntity>();
 		for (EmployeeEntity emt : er.findAll()) {
