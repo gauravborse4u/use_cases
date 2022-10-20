@@ -28,6 +28,7 @@ public class ClientsEntity {
 	private String Plan;
 	private Integer Duration;
 
+
 	public Integer getCid() {
 		return Cid;
 	}
