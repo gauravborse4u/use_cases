@@ -12,10 +12,38 @@ public class ClientsController {
 	@Autowired
 	private ClientRepo cr;
 
-	@GetMapping("/join")
+	@GetMapping("/id=1")
 	public List<ClientsEntity> joincol() {
 
-		return cr.getjoin();
+		return cr.id1();
+
+	}
+	
+	@GetMapping("/id=2")
+	public List<ClientsEntity> joincol2() {
+
+		return cr.id2();
+
+	}
+	
+	@GetMapping("/id=3")
+	public List<ClientsEntity> joincol3() {
+
+		return cr.id3();
+
+	}
+	
+	@GetMapping("/id=4")
+	public List<ClientsEntity> joincol4() {
+
+		return cr.id4();
+
+	}
+	
+	@GetMapping("/id=5")
+	public List<ClientsEntity> joincol5() {
+
+		return cr.id5();
 
 	}
 
